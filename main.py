@@ -99,11 +99,12 @@ def both_boards():
 
 # https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
 def file_browser(ext):
-    """Returns files with an extension"""
+    """Returns files with an extension."""
     return [f for f in glob.glob(f"*{ext}")]
 
 
 def adding_board(arg, board):
+    """Adds a board to a new file."""
     with open(arg, "w+") as f:
         for row in board:
             f.write(" ".join(row) + "\n")
@@ -111,6 +112,7 @@ def adding_board(arg, board):
 
 
 def chosen_board(board):
+    """Chooses file to use as ai board."""
     print(f"Please choose a board for your enemy.\n{files}")
     while True:
         try:
@@ -238,6 +240,7 @@ while True:
 
 
 end_game = False
+# quit or save player board to new file.
 while not end_game:
     save_board = input("\nWould you like to save your board to use as AI board in future games?: [Y/N] ").upper()
     if save_board == "Y":
