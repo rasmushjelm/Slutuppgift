@@ -22,6 +22,7 @@ You will have 6 ships
 - 2 ships of size 2
 - 1 ship of size 3
 - 1 ship of size 4
+
 #### To play
 you start by placing your ships onto your boats, choosing where you want to place them.
 
